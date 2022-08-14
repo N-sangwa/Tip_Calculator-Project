@@ -22,7 +22,8 @@ const increasePeople = () => {
   }
 const decreasePeople = () => {
   if(totalPeople <= 1 ){
-    return
+  throw 'Ops! Number of people can not be less than is 1'
+// return
   }
 
   totalPeople -= 1
